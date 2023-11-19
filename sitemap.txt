@@ -1,4 +1,6 @@
+http://example.com/2023/11/19/markdown-tutorial/
 http://example.com/2023/11/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/
 http://example.com/about/index.html
 http://example.com/
+http://example.com/categories/%E5%B7%A5%E5%85%B7/
 http://example.com/categories/%E5%B0%81%E7%A5%9E%E4%B9%8B%E8%B7%AF/
