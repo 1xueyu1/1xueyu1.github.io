@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://1xueyu1.github.io/2023/11/21/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
+    
+    <lastmod>2023-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://1xueyu1.github.io/2023/11/19/markdown-tutorial/</loc>
     
     <lastmod>2023-11-20</lastmod>
@@ -58,10 +67,31 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://1xueyu1.github.io/tags/%E5%9B%BE/</loc>
+    <lastmod>2023-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1xueyu1.github.io/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2023-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://1xueyu1.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1xueyu1.github.io/categories/%E5%B7%A5%E5%85%B7/Markdown/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -75,7 +105,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E5%B7%A5%E5%85%B7/Markdown/</loc>
+    <loc>https://1xueyu1.github.io/categories/%E5%9B%BE/</loc>
     <lastmod>2023-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
