@@ -142,7 +142,7 @@
     <li>
         <div class="all active" data-rel="All">All
             
-                <small>(2)</small>
+                <small>(1)</small>
             
         </div>
     </li>
@@ -154,21 +154,6 @@
         <div data-rel="工具">
             
             工具
-            <small>(1)</small>
-        </div>
-        
-    </li>
-
-            
-        
-    
-        
-            
-                
-    <li>
-        <div data-rel="封神之路">
-            
-            封神之路
             <small>(1)</small>
         </div>
         
@@ -197,7 +182,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="2">
+<input type="hidden" id="yelog_site_posts_number" value="1">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -257,15 +242,6 @@
            data-author="" >
             <span class="post-title" title="markdown-tutorial">markdown-tutorial</span>
             <span class="post-date" title="2023-11-19 00:51:12">2023/11/19</span>
-        </a>
-        
-        
-        <a  class="All 封神之路 "
-           href="/2023/11/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="我的第一篇博客">我的第一篇博客</span>
-            <span class="post-date" title="2023-11-18 23:36:37">2023/11/18</span>
         </a>
         
         <div id="no-item-tips">
@@ -497,12 +473,12 @@
     /* 背景图样式 */
     
     #post {
-        background: url(L:\Blog\RayiiBlog\themes\hexo-theme-3-hexo\source\img\index_bg_img.jpg);
+        background: url(/img/index_bg_img.jpg);
     }
     
     
     #post .index {
-        background: url(L:\Blog\RayiiBlog\themes\hexo-theme-3-hexo\source\img\other_bg_img.jpg);
+        background: url(/img/other_bg_img.jpg);
     }
     
 
@@ -521,7 +497,7 @@
         width: 100%;
         height: 100%;
         opacity: 0.3;
-        background: url("L:\Blog\RayiiBlog\themes\hexo-theme-3-hexo\source\img\article-list-background.jpg");
+        background: url("/img/article-list-background.jpg");
         background-repeat: no-repeat;
         background-position: 50% 0;
         -ms-background-size: cover;
@@ -541,4 +517,40 @@
 
 
 
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 50;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1305364667&auto=1&height=66"></iframe>
+</div>
+</div>
+
+<!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码-->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset().left;
+var div_y = e.pageY - $moveTarget.offset().top;
+$DOC.on('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth() >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight() >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+$moveTarget.css({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on('mouseup', function () {
+$DOC.unbind("selectstart");
+$DOC.off('mousemove')
+$DOC.off('mouseup')
+$moveTarget.css('border', 'none')
+$('#musicDragArea').css('height', '10px');
+})
+})
+</script>
 </html>
