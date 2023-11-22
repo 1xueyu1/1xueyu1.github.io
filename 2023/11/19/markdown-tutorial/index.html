@@ -410,7 +410,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2023-11-20 23:42:52'>2023-11-19 00:51</time>
+            Created At : <time class="date" title='Updated At: 2023-11-22 23:14:57'>2023-11-19 00:51</time>
         
     </div>
     <div class="article-meta">
@@ -560,7 +560,7 @@
 <h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>使用<code>&lt;&gt;</code>包括的URL或邮箱地址会被自动转换为超链接:</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">&lt;https://www.baidu.com&gt;</span></span><br><span class="line">&lt;123@email.com&gt;</span><br></pre></td></tr></table></figure>
 
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a><br><a href="mailto:&#49;&#x32;&#51;&#x40;&#101;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#49;&#x32;&#51;&#x40;&#101;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a><br><a href="mailto:&#x31;&#x32;&#x33;&#64;&#101;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x31;&#x32;&#x33;&#64;&#101;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片名称</span>](<span class="link">图片地址或图片本地存储的路径</span>)</span><br></pre></td></tr></table></figure>
 
 <h4 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h4><img src="/2023/11/19/markdown-tutorial/微信图片_20231118193203.jpg" alt="她真好看的吧">
@@ -604,17 +604,23 @@
 <p>T &#x3D; TOP, B &#x3D; BOTTOM, L &#x3D; LEFT, R &#x3D; RIGHT, D &#x3D; DOWN</p>
 </blockquote>
 <p>最常用的是TB、LR</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​<span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph TB;</span></span><br><span class="line"><span class="code">	A--&gt;B</span></span><br><span class="line"><span class="code">	B--&gt;C</span></span><br><span class="line"><span class="code">	C--&gt;A</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line"><span class="code">	A--&gt;B</span></span><br><span class="line"><span class="code">	B--&gt;C</span></span><br><span class="line"><span class="code">	C--&gt;A</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line">	A--&gt;B</span><br><span class="line">	B--&gt;C</span><br><span class="line">	C--&gt;A</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​<span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph LR;</span></span><br><span class="line"><span class="code">	A--&gt;B</span></span><br><span class="line"><span class="code">	B--&gt;C</span></span><br><span class="line"><span class="code">	C--&gt;A</span></span><br></pre></td></tr></table></figure>
-
+<pre class="mermaid">graph TB;
+    A-->B
+    B-->C
+    C-->A</pre>
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">	A--&gt;B</span><br><span class="line">	B--&gt;C</span><br><span class="line">	C--&gt;A</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line"><span class="code">	A--&gt;B</span></span><br><span class="line"><span class="code">	B--&gt;C</span></span><br><span class="line"><span class="code">	C--&gt;A</span></span><br></pre></td></tr></table></figure>
+
+
+
+<pre class="mermaid">graph LR;
+    A-->B
+    B-->C
+    C-->A</pre>
 
 
 
@@ -656,22 +662,50 @@
 
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line">	A</span><br><span class="line">	B(圆角矩形节点)</span><br><span class="line">	C[矩形节点]</span><br><span class="line">	D((圆形节点))</span><br><span class="line">	E&#123;菱形节点&#125;</span><br><span class="line">	F&gt;右向旗帜状节点]</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB;
+    A
+    B(圆角矩形节点)
+    C[矩形节点]
+    D((圆形节点))
+    E{菱形节点}
+    F>右向旗帜状节点]</pre>
 
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line"><span class="code">	begin(出门)--&gt; buy[买炸鸡]</span></span><br><span class="line"><span class="code">	buy --&gt; IsRemaining&#123;&quot;还有没有炸鸡？&quot;&#125;</span></span><br><span class="line"><span class="code">	IsRemaining --有--&gt; happy[买到炸鸡开心] --&gt; goBack(回家)</span></span><br><span class="line"><span class="code">	IsRemaining --没有--&gt; sad[&quot;伤心&quot;] --&gt; goBack</span></span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line">	begin(出门)--&gt; buy[买炸鸡]</span><br><span class="line">	buy --&gt; IsRemaining&#123;&quot;还有没有炸鸡？&quot;&#125;</span><br><span class="line">	IsRemaining --有--&gt; happy[买到炸鸡开心] --&gt; goBack(回家)</span><br><span class="line">	IsRemaining --没有--&gt; sad[&quot;伤心&quot;] --&gt; goBack</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB;
+    begin(出门)--> buy[买炸鸡]
+    buy --> IsRemaining{"还有没有炸鸡？"}
+    IsRemaining --有--> happy[买到炸鸡开心] --> goBack(回家)
+    IsRemaining --没有--> sad["伤心"] --> goBack</pre>
 
 
 
 <h3 id="连线"><a href="#连线" class="headerlink" title="连线"></a>连线</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line"><span class="code">	A1--&gt;B1</span></span><br><span class="line"><span class="code">	A2---B2</span></span><br><span class="line"><span class="code">	A3--text---B3</span></span><br><span class="line"><span class="code">	A4--text--&gt;B4</span></span><br><span class="line"><span class="code">	A5-.-B5</span></span><br><span class="line"><span class="code">	A6-.-&gt;B6</span></span><br><span class="line"><span class="code">	A7-.text.-B7</span></span><br><span class="line"><span class="code">	A8-.text.-&gt;B8</span></span><br><span class="line"><span class="code">	A9===B9</span></span><br><span class="line"><span class="code">	A10==&gt;B10</span></span><br><span class="line"><span class="code">	A11==text===B11</span></span><br><span class="line"><span class="code">	A12==text==&gt;B12</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line">	A1--&gt;B1</span><br><span class="line">	A2---B2</span><br><span class="line">	A3--text---B3</span><br><span class="line">	A4--text--&gt;B4</span><br><span class="line">	A5-.-B5</span><br><span class="line">	A6-.-&gt;B6</span><br><span class="line">	A7-.text.-B7</span><br><span class="line">	A8-.text.-&gt;B8</span><br><span class="line">	A9===B9</span><br><span class="line">	A10==&gt;B10</span><br><span class="line">	A11==text===B11</span><br><span class="line">	A12==text==&gt;B12</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB;
+    A1-->B1
+    A2---B2
+    A3--text---B3
+    A4--text-->B4
+    A5-.-B5
+    A6-.->B6
+    A7-.text.-B7
+    A8-.text.->B8
+    A9===B9
+    A10==>B10
+    A11==text===B11
+    A12==text==>B12</pre>
 
 <h3 id="子表图"><a href="#子表图" class="headerlink" title="子表图"></a>子表图</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph 子图表名称</span><br><span class="line"><span class="code">	语句</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB;</span><br><span class="line">	subgraph 买炸鸡前</span><br><span class="line">		begin(出门)--&gt; buy[买炸鸡]</span><br><span class="line">	end</span><br><span class="line">	buy --&gt; IsRemaining&#123;&quot;还有没有炸鸡？&quot;&#125;</span><br><span class="line">	IsRemaining --有--&gt; happy[买到炸鸡开心] --&gt; goBack(回家)</span><br><span class="line">	IsRemaining --没有--&gt; sad[&quot;伤心&quot;] --&gt; goBack</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph TB;
+    subgraph 买炸鸡前
+        begin(出门)--> buy[买炸鸡]
+    end
+    buy --> IsRemaining{"还有没有炸鸡？"}
+    IsRemaining --有--> happy[买到炸鸡开心] --> goBack(回家)
+    IsRemaining --没有--> sad["伤心"] --> goBack</pre>
 
 
 
@@ -765,6 +799,25 @@
 
         
         
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
     }
 
     /*打赏页面隐藏与展示*/
@@ -776,6 +829,7 @@
     
 
 </script>
+
 
 <!--加入行号的高亮代码块样式-->
 

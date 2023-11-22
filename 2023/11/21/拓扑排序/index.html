@@ -441,7 +441,10 @@
       
         <h2 id="拓扑排序-理论"><a href="#拓扑排序-理论" class="headerlink" title="拓扑排序(理论)"></a>拓扑排序(理论)</h2><p>参考<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3347f54a3187">深入理解拓扑排序（Topological sort) - 简书 (jianshu.com)</a></p>
 <h3 id="拓扑排序存在前提"><a href="#拓扑排序存在前提" class="headerlink" title="拓扑排序存在前提"></a>拓扑排序存在前提</h3><p>当且仅当一个有向图为有向无环图（directed acyclic graph，或称DAG）时，才能得到对应于该图的拓扑排序。每一个有向无环图都至少存在一种拓扑排序。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">	A--&gt;B--&gt;C--&gt;D</span><br><span class="line">	A--&gt;E--&gt;F--&gt;D</span><br><span class="line">	B--&gt;F</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">graph LR;
+    A-->B-->C-->D
+    A-->E-->F-->D
+    B-->F</pre>
 
 <p>其拓扑排序为[A, B, E, C, F, D]</p>
 <p><strong>要点</strong></p>
@@ -558,6 +561,25 @@
 
         
         
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
     }
 
     /*打赏页面隐藏与展示*/
@@ -569,6 +591,7 @@
     
 
 </script>
+
 
 <!--加入行号的高亮代码块样式-->
 
