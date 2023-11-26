@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>逆向基础 | Rayii&#39;s blog</title>
-  <meta name="keywords" content=" 逆向 ">
-  <meta name="description" content="逆向基础 | Rayii&#39;s blog">
+  <title>线段树 | Rayii&#39;s blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="线段树 | Rayii&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -446,34 +446,19 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-逆向基础" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-线段树" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">逆向基础</h1>
+        <h1 class="article-title">线段树</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="逆向">逆向</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">逆向</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2023-11-25 18:36:39'>2023-11-24 22:30</time>
+            Created At : <time class="date" title='Updated At: 2023-11-26 10:37:35'>2023-11-26 10:37</time>
         
     </div>
     <div class="article-meta">
@@ -484,7 +469,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80"><span class="toc-text">逆向基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="toc-text">破解思路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%AA%8C%E8%AF%81%E5%BD%A2%E5%BC%8F"><span class="toc-text">其他验证形式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E9%AA%8C%E8%AF%81"><span class="toc-text">网络验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E9%AA%8C%E8%AF%81"><span class="toc-text">重启验证</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8-RegOpenKeyA"><span class="toc-text">注册表 : RegOpenKeyA</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#TXT-ReadFile"><span class="toc-text">TXT  : ReadFile</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#INI-GetPrivateProfileString"><span class="toc-text">INI : GetPrivateProfileString</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95"><span class="toc-text">破解方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2-%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2%E5%92%8C%E5%86%85%E5%AD%98%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2"><span class="toc-text">字符串搜索(文本搜索和内存字符串搜索)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0%E4%B8%8B%E6%96%AD%E7%82%B9"><span class="toc-text">在一些函数下断点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%A6%82MessageBoxA"><span class="toc-text">如MessageBoxA</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#skills"><span class="toc-text">skills</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x00401000%E5%A4%84%E4%BB%A3%E7%A0%81%E4%B8%BAXOR-eax-eax%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%98%AF%E7%94%B1%E6%98%93%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84"><span class="toc-text">0x00401000处代码为XOR eax, eax的程序是由易语言编写的</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OD%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">OD使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ctrl-F9-%E8%BF%90%E8%A1%8C%E5%88%B0%E5%BD%93%E5%89%8D%E5%87%BD%E6%95%B0%E7%BB%93%E5%B0%BE"><span class="toc-text">Ctrl + F9 运行到当前函数结尾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ALT-F9-%E7%9B%B4%E6%8E%A5%E4%BB%8E%E7%B3%BB%E7%BB%9F%E9%A2%86%E7%A9%BA%E8%BF%90%E8%A1%8C%E5%88%B0%E7%A8%8B%E5%BA%8F%E9%A2%86%E7%A9%BA"><span class="toc-text">ALT + F9 直接从系统领空运行到程序领空</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%8B"><span class="toc-text">例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%93%E8%AF%AD%E8%A8%80"><span class="toc-text">易语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%81%B0%E8%89%B2%E6%8C%89%E9%92%AE"><span class="toc-text">灰色按钮</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -500,22 +485,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="逆向基础"><a href="#逆向基础" class="headerlink" title="逆向基础"></a>逆向基础</h1><p><strong>参考文章</strong>（系列）–&gt; <strong>强推</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1358649-1-1.html">玩玩破解，写给新人看（第一集） - 『脱壳破解区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a><strong>（完全零基础也能看）</strong></p>
-<h2 id="破解思路"><a href="#破解思路" class="headerlink" title="破解思路"></a>破解思路</h2><p>我们输入账号密码，然后软件会去验证我们的账号密码是否正确所以有验证过程。我们可以通过修改验证结果从而成功破解</p>
-<h3 id="其他验证形式"><a href="#其他验证形式" class="headerlink" title="其他验证形式"></a>其他验证形式</h3><h4 id="网络验证"><a href="#网络验证" class="headerlink" title="网络验证"></a>网络验证</h4><p>修改从服务器传回的结果即可</p>
-<h4 id="重启验证"><a href="#重启验证" class="headerlink" title="重启验证"></a>重启验证</h4><p>第一次输入账号密码后，我们的账号密码会保存在某个位置，以后打开时会自动读取</p>
-<h5 id="注册表-RegOpenKeyA"><a href="#注册表-RegOpenKeyA" class="headerlink" title="注册表 : RegOpenKeyA"></a>注册表 : RegOpenKeyA</h5><h5 id="TXT-ReadFile"><a href="#TXT-ReadFile" class="headerlink" title="TXT  : ReadFile"></a>TXT  : ReadFile</h5><h5 id="INI-GetPrivateProfileString"><a href="#INI-GetPrivateProfileString" class="headerlink" title="INI : GetPrivateProfileString"></a>INI : GetPrivateProfileString</h5><h2 id="破解方法"><a href="#破解方法" class="headerlink" title="破解方法"></a>破解方法</h2><h4 id="字符串搜索-文本搜索和内存字符串搜索"><a href="#字符串搜索-文本搜索和内存字符串搜索" class="headerlink" title="字符串搜索(文本搜索和内存字符串搜索)"></a>字符串搜索(文本搜索和内存字符串搜索)</h4><h4 id="在一些函数下断点"><a href="#在一些函数下断点" class="headerlink" title="在一些函数下断点"></a>在一些函数下断点</h4><h6 id="如MessageBoxA"><a href="#如MessageBoxA" class="headerlink" title="如MessageBoxA"></a>如MessageBoxA</h6><h3 id="skills"><a href="#skills" class="headerlink" title="skills"></a>skills</h3><h4 id="0x00401000处代码为XOR-eax-eax的程序是由易语言编写的"><a href="#0x00401000处代码为XOR-eax-eax的程序是由易语言编写的" class="headerlink" title="0x00401000处代码为XOR eax, eax的程序是由易语言编写的"></a>0x00401000处代码为XOR eax, eax的程序是由易语言编写的</h4><h3 id="OD使用技巧"><a href="#OD使用技巧" class="headerlink" title="OD使用技巧"></a>OD使用技巧</h3><h4 id="Ctrl-F9-运行到当前函数结尾"><a href="#Ctrl-F9-运行到当前函数结尾" class="headerlink" title="Ctrl + F9 运行到当前函数结尾"></a>Ctrl + F9 运行到当前函数结尾</h4><h4 id="ALT-F9-直接从系统领空运行到程序领空"><a href="#ALT-F9-直接从系统领空运行到程序领空" class="headerlink" title="ALT + F9 直接从系统领空运行到程序领空"></a>ALT + F9 直接从系统领空运行到程序领空</h4><h2 id="例"><a href="#例" class="headerlink" title="例"></a>例</h2><p><a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1360369-1-1.html">玩玩破解，写给新人看（第八集） - 『脱壳破解区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a></p>
-<p>第一步：先用PEID查壳</p>
-<p>第二步：用DIE64查一下编程语言。</p>
-<p>这时我们有两种选择，一种是先<a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum-5-1.html">脱壳</a>再用OD分析，一种是不脱壳直接用OD分析。</p>
-<h2 id="易语言"><a href="#易语言" class="headerlink" title="易语言"></a>易语言</h2><p>通过二进制搜索“FF 25”来到这一群JMP的位置（也叫做易语言体），JMP上面的PUSH 5201***** 就是打开的第一个窗口的ID。</p>
-<p>子窗口ID的代码上面会有一个PUSH 10001，告诉你，这个是易语言通用的，每个窗口ID语句上面都会有一个PUSH 10001。所以，我们要找其他窗口，最好的方法就是找PUSH 10001这句代码，然后往下就看到窗口ID了。</p>
-<p>这个FF 25的地址，应该是目前版本的易语言弹出第一个窗口的目标地址，这是语言框架决定的了，所以记住这个位置就行了，下次遇到易语言编写的程序就可以直接定位这个地址。</p>
-<p>假定你现在破解一个外挂，通过这个方法找到三个不同的窗口ID，你也不知道哪个是功能窗口ID，那你就在我们通过“FF 25”找到的第一个窗口ID那里逐个进行替换尝试。</p>
-<h2 id="灰色按钮"><a href="#灰色按钮" class="headerlink" title="灰色按钮"></a>灰色按钮</h2><p>操作系统为按钮的状态显示有一个专门的函数可以调用，函数名字叫做EnableWindow，中文意思就是窗口或者里面的控件（按钮、菜单、输入框等）能否被允许响应鼠标和键盘的输入。</p>
-<p>这个函数有两个参数，上面一个数值就是按钮的状态，如果是1表示按钮可以被点击，如果是0表示按钮不可以被点击。</p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
     </div>
