@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>二叉树迭代器 | Rayii&#39;s blog</title>
+  <meta name="keywords" content=" 二叉树 ">
+  <meta name="description" content="二叉树迭代器 | Rayii&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://1xueyu1.github.io/about/index.html">
+<meta property="og:site_name" content="Rayii&#39;s blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-09-30T09:25:30.000Z">
+<meta property="article:modified_time" content="2023-11-19T16:26:31.768Z">
+<meta property="article:author" content="Rayii">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Rayii's blog" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Rayii</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:3299391667@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=3299391667&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(9)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="工具">
+            <i class="fold iconfont icon-right"></i>
+            工具
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="工具&lt;---&gt;Markdown">
+            
+            Markdown
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="逆向">
+            
+            逆向
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="数据结构">
+            <i class="fold iconfont icon-right"></i>
+            数据结构
+            <small>(7)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;树">
+            
+            树
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;图">
+            
+            图
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;skills">
+            
+            skills
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="9">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>并查集</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树的遍历</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二分法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>逆向</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>拓扑排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>线段树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>最小生成树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树迭代器">二叉树迭代器</span>
+            <span class="post-date" title="2023-11-27 22:36:10">2023/11/27</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/27/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"
+           data-tag="最小生成树"
+           data-author="" >
+            <span class="post-title" title="最小生成树">最小生成树</span>
+            <span class="post-date" title="2023-11-27 10:22:26">2023/11/27</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/"
+           data-tag="线段树"
+           data-author="" >
+            <span class="post-title" title="线段树">线段树</span>
+            <span class="post-date" title="2023-11-26 10:37:35">2023/11/26</span>
+        </a>
+        
+        
+        <a  class="All 逆向 "
+           href="/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/"
+           data-tag="逆向"
+           data-author="" >
+            <span class="post-title" title="逆向基础">逆向基础</span>
+            <span class="post-date" title="2023-11-24 22:30:50">2023/11/24</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 skills "
+           href="/2023/11/23/%E4%BA%8C%E5%88%86%E6%B3%95/"
+           data-tag="二分法"
+           data-author="" >
+            <span class="post-title" title="二分法">二分法</span>
+            <span class="post-date" title="2023-11-23 21:04:24">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/21/%E5%B9%B6%E6%9F%A5%E9%9B%86/"
+           data-tag="并查集"
+           data-author="" >
+            <span class="post-title" title="并查集">并查集</span>
+            <span class="post-date" title="2023-11-21 23:04:53">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/21/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/"
+           data-tag="图,拓扑排序"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2023-11-21 00:11:36">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/20/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"
+           data-tag="二叉树的遍历,C"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历">二叉树的遍历</span>
+            <span class="post-date" title="2023-11-20 17:09:30">2023/11/20</span>
+        </a>
+        
+        
+        <a  class="All 工具 Markdown "
+           href="/2023/11/19/markdown-tutorial/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="markdown-tutorial">markdown-tutorial</span>
+            <span class="post-date" title="2023-11-19 00:51:12">2023/11/19</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-二叉树迭代器" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">二叉树迭代器</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="数据结构">数据结构</a> > 
+            
+            <a  data-rel="数据结构&lt;---&gt;树">树</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">二叉树</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2023-11-28 13:10:39'>2023-11-27 22:36</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8%EF%BC%88%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86%EF%BC%89"><span class="toc-text">二叉树迭代器（前序遍历）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%A0%91%E8%8A%82%E7%82%B9"><span class="toc-text">定义树节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91%E7%B1%BB"><span class="toc-text">创建二叉树类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-text">二叉树迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E4%BB%A3%E7%A0%81"><span class="toc-text">总代码</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="二叉树迭代器（前序遍历）"><a href="#二叉树迭代器（前序遍历）" class="headerlink" title="二叉树迭代器（前序遍历）"></a>二叉树迭代器（前序遍历）</h2><h3 id="定义树节点"><a href="#定义树节点" class="headerlink" title="定义树节点"></a>定义树节点</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 树节点</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	<span class="keyword">struct</span> <span class="title class_">node</span>* left, * right;</span><br><span class="line">&#125;TreeNode;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建二叉树类"><a href="#创建二叉树类" class="headerlink" title="创建二叉树类"></a>创建二叉树类</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 二叉树类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BinaryTree</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">BinaryTree</span>() &#123;&#125;</span><br><span class="line">	<span class="comment">// 二叉树构造函数</span></span><br><span class="line">	<span class="built_in">BinaryTree</span>(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span><br><span class="line">	&#123;</span><br><span class="line">		root = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 构建二叉树函数</span></span><br><span class="line">	<span class="function">TreeNode* <span class="title">creatBinaryTree</span><span class="params">(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回begin迭代器</span></span><br><span class="line">	<span class="function">BinaryTreeIterator <span class="title">begin</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">BinaryTreeIterator</span>(root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回end迭代器</span></span><br><span class="line">	<span class="function">BinaryTreeIterator <span class="title">end</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">BinaryTreeIterator</span>(<span class="literal">NULL</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">addFive</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(BinaryTreeIterator it = <span class="built_in">begin</span>(); it != <span class="built_in">end</span>(); ++it)</span><br><span class="line">		&#123;</span><br><span class="line">			(*it)-&gt;val += <span class="number">5</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	TreeNode* root;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function">TreeNode* <span class="title">BinaryTree::creatBinaryTree</span><span class="params">(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//如果数组当前值为-1，空节点</span></span><br><span class="line">	<span class="keyword">if</span> (num[(*index)] == <span class="number">-1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		(*index)++;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	TreeNode* root = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">if</span> ((*index) &lt; numSize)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//否则新建节点</span></span><br><span class="line">		root = (TreeNode*)<span class="built_in">malloc</span>(<span class="built_in">sizeof</span>(TreeNode));</span><br><span class="line">		<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;内存分配失败!\n&quot;</span>);</span><br><span class="line">			<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		root-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">		root-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">		root-&gt;val = num[(*index)++];</span><br><span class="line">	</span><br><span class="line">		root-&gt;left = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">		root-&gt;right = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="二叉树迭代器"><a href="#二叉树迭代器" class="headerlink" title="二叉树迭代器"></a>二叉树迭代器</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 构建二叉树的迭代器</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BinaryTreeIterator</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="comment">// 先存放二叉树的根节点</span></span><br><span class="line">	<span class="built_in">BinaryTreeIterator</span>(TreeNode* root)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (root)</span><br><span class="line">		&#123;</span><br><span class="line">			st.<span class="built_in">push</span>(root);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 重载*，返回当前位置的节点</span></span><br><span class="line">	TreeNode*&amp; <span class="keyword">operator</span>*()</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> st.<span class="built_in">top</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 重载++， 按照前序遍历的方式遍历二叉树</span></span><br><span class="line">	BinaryTreeIterator&amp; <span class="keyword">operator</span>++()</span><br><span class="line">	&#123;</span><br><span class="line">		TreeNode* node = st.<span class="built_in">top</span>();</span><br><span class="line">		st.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="keyword">if</span> (node-&gt;right)st.<span class="built_in">push</span>(node-&gt;right);</span><br><span class="line">		<span class="keyword">if</span> (node-&gt;left)st.<span class="built_in">push</span>(node-&gt;left);</span><br><span class="line">		<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="type">bool</span> <span class="keyword">operator</span>!=(<span class="type">const</span> BinaryTreeIterator&amp; a)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> !st.<span class="built_in">empty</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	stack&lt;TreeNode*&gt; st;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="总代码"><a href="#总代码" class="headerlink" title="总代码"></a>总代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;numeric&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 树节点</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> val;</span><br><span class="line">	<span class="keyword">struct</span> <span class="title class_">node</span>* left, * right;</span><br><span class="line">&#125;TreeNode;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 构建二叉树的迭代器</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BinaryTreeIterator</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="comment">// 先存放二叉树的根节点</span></span><br><span class="line">	<span class="built_in">BinaryTreeIterator</span>(TreeNode* root)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (root)</span><br><span class="line">		&#123;</span><br><span class="line">			st.<span class="built_in">push</span>(root);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 重载*，返回当前位置的节点</span></span><br><span class="line">	TreeNode*&amp; <span class="keyword">operator</span>*()</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> st.<span class="built_in">top</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 按照前序遍历的方式遍历二叉树</span></span><br><span class="line">	BinaryTreeIterator&amp; <span class="keyword">operator</span>++()</span><br><span class="line">	&#123;</span><br><span class="line">		TreeNode* node = st.<span class="built_in">top</span>();</span><br><span class="line">		st.<span class="built_in">pop</span>();</span><br><span class="line">		<span class="keyword">if</span> (node-&gt;right)st.<span class="built_in">push</span>(node-&gt;right);</span><br><span class="line">		<span class="keyword">if</span> (node-&gt;left)st.<span class="built_in">push</span>(node-&gt;left);</span><br><span class="line">		<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="type">bool</span> <span class="keyword">operator</span>!=(<span class="type">const</span> BinaryTreeIterator&amp; a)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> !st.<span class="built_in">empty</span>();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	stack&lt;TreeNode*&gt; st;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 二叉树类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BinaryTree</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">BinaryTree</span>() &#123;&#125;</span><br><span class="line">	<span class="comment">// 二叉树构造函数</span></span><br><span class="line">	<span class="built_in">BinaryTree</span>(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span><br><span class="line">	&#123;</span><br><span class="line">		root = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 构建二叉树函数</span></span><br><span class="line">	<span class="function">TreeNode* <span class="title">creatBinaryTree</span><span class="params">(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="function">BinaryTreeIterator <span class="title">begin</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">BinaryTreeIterator</span>(root);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function">BinaryTreeIterator <span class="title">end</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">BinaryTreeIterator</span>(<span class="literal">NULL</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">addFive</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(BinaryTreeIterator it = <span class="built_in">begin</span>(); it != <span class="built_in">end</span>(); ++it)</span><br><span class="line">		&#123;</span><br><span class="line">			(*it)-&gt;val += <span class="number">5</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	TreeNode* root;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//前序遍历和此顺序一样，-1代表节点为空</span></span><br><span class="line">	<span class="type">int</span> num[] = &#123; <span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">-1</span>, <span class="number">8</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">15</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">43</span>, <span class="number">12</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">42</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">33</span>, <span class="number">21</span>, <span class="number">54</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">31</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">-1</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">-1</span>, <span class="number">-1</span>&#125;;</span><br><span class="line">	<span class="type">int</span> numSize = <span class="built_in">sizeof</span>(num) / <span class="built_in">sizeof</span>(<span class="type">int</span>);</span><br><span class="line">	<span class="type">int</span> index = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">// 以root为根节点创建二叉树对象</span></span><br><span class="line">	<span class="function">BinaryTree <span class="title">tree</span><span class="params">(num, numSize, &amp;index)</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">	<span class="comment">// 利用 二叉树迭代器 遍历二叉树</span></span><br><span class="line">	<span class="keyword">for</span> (BinaryTreeIterator it = tree.<span class="built_in">begin</span>(); it != tree.<span class="built_in">end</span>(); ++it)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; (*it)-&gt;val &lt;&lt; <span class="string">&quot;   &quot;</span>;</span><br><span class="line">		sum += (*it)-&gt;val;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; endl &lt;&lt; <span class="string">&quot;sum : &quot;</span> &lt;&lt; sum &lt;&lt; endl;</span><br><span class="line">	<span class="comment">// 用accumulate函数验证</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;accumulate值 : &quot;</span> &lt;&lt; <span class="built_in">accumulate</span>(tree.<span class="built_in">begin</span>(), tree.<span class="built_in">end</span>(), <span class="number">0</span>, [](<span class="type">int</span> sum, BinaryTreeIterator a)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> sum + (*a)-&gt;val;</span><br><span class="line">		&#125;) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 二叉树所有节点+5</span></span><br><span class="line">	tree.<span class="built_in">addFive</span>();</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;所有节点+5后 :&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">for</span> (BinaryTreeIterator it = tree.<span class="built_in">begin</span>(); it != tree.<span class="built_in">end</span>(); ++it)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; (*it)-&gt;val &lt;&lt; <span class="string">&quot;   &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">TreeNode* <span class="title">BinaryTree::creatBinaryTree</span><span class="params">(<span class="type">int</span> num[], <span class="type">int</span> numSize, <span class="type">int</span>* index)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//如果数组当前值为-1，空节点</span></span><br><span class="line">	<span class="keyword">if</span> (num[(*index)] == <span class="number">-1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		(*index)++;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	TreeNode* root = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">if</span> ((*index) &lt; numSize)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">//否则新建节点</span></span><br><span class="line">		root = (TreeNode*)<span class="built_in">malloc</span>(<span class="built_in">sizeof</span>(TreeNode));</span><br><span class="line">		<span class="keyword">if</span> (root == <span class="literal">NULL</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;内存分配失败!\n&quot;</span>);</span><br><span class="line">			<span class="built_in">exit</span>(<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		root-&gt;left = <span class="literal">NULL</span>;</span><br><span class="line">		root-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">		root-&gt;val = num[(*index)++];</span><br><span class="line">	</span><br><span class="line">		root-&gt;left = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">		root-&gt;right = <span class="built_in">creatBinaryTree</span>(num, numSize, index);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2023 author
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    #post {
+        background: url(/img/index_bg_img.jpg);
+    }
+    
+    
+    #post .index {
+        background: url(/img/other_bg_img.jpg);
+    }
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/article-list-background.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1305364667&auto=1&height=66"></iframe>
+</div>
+
+
+
+<!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码-->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset().left;
+var div_y = e.pageY - $moveTarget.offset().top;
+$DOC.on('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth() >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight() >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+$moveTarget.css({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on('mouseup', function () {
+$DOC.unbind("selectstart");
+$DOC.off('mousemove')
+$DOC.off('mouseup')
+$moveTarget.css('border', 'none')
+$('#musicDragArea').css('height', '10px');
+})
+})
+</script>
+</html>
