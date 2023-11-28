@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
     
     <lastmod>2023-11-28</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/27/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/27/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</loc>
     
     <lastmod>2023-11-28</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8/</loc>
     
     <lastmod>2023-11-28</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/21/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/21/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
     
     <lastmod>2023-11-26</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2023-11-25</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/23/%E4%BA%8C%E5%88%86%E6%B3%95/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/23/%E4%BA%8C%E5%88%86%E6%B3%95/</loc>
     
     <lastmod>2023-11-23</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/19/markdown-tutorial/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/19/markdown-tutorial/</loc>
     
     <lastmod>2023-11-22</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/20/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/20/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/</loc>
     
     <lastmod>2023-11-22</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/2023/11/21/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
+    <loc>https://1xueyu1.github.io/project/2023/11/21/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
     
     <lastmod>2023-11-20</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/about/index.html</loc>
+    <loc>https://1xueyu1.github.io/project/about/index.html</loc>
     
     <lastmod>2023-11-19</lastmod>
     
@@ -93,7 +93,7 @@
   
 
   <url>
-    <loc>https://1xueyu1.github.io/</loc>
+    <loc>https://1xueyu1.github.io/project</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -101,77 +101,77 @@
 
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/Markdown/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E4%BA%8C%E5%88%86%E6%B3%95/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E4%BA%8C%E5%88%86%E6%B3%95/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/Markdown/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/C/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/C/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E5%9B%BE/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E5%9B%BE/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E9%80%86%E5%90%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/tags/%E9%80%86%E5%90%91/</loc>
+    <loc>https://1xueyu1.github.io/project/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -180,49 +180,49 @@
 
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E5%B7%A5%E5%85%B7/Markdown/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9B%BE/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9B%BE/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/skills/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/skills/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E5%B7%A5%E5%85%B7/Markdown/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://1xueyu1.github.io/categories/%E9%80%86%E5%90%91/</loc>
+    <loc>https://1xueyu1.github.io/project/categories/%E9%80%86%E5%90%91/</loc>
     <lastmod>2023-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
