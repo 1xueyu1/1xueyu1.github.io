@@ -6,17 +6,14 @@
   <meta name="keywords" content=" 逆向 ">
   <meta name="description" content="逆向基础 | Rayii&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="二叉树迭代器（前序遍历）定义树节点123456&#x2F;&#x2F; 树节点typedef struct node&#123;	int val;	struct node* left, * right;&#125;TreeNode;  创建二叉树类12345678910111213141516171819202122232425262728293031323334353637383940414243444546474">
-<meta property="og:type" content="article">
-<meta property="og:title" content="二叉树迭代器">
-<meta property="og:url" content="https://1xueyu1.github.io/project/2023/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://1xueyu1.github.io/project/about/index.html">
 <meta property="og:site_name" content="Rayii&#39;s blog">
-<meta property="og:description" content="二叉树迭代器（前序遍历）定义树节点123456&#x2F;&#x2F; 树节点typedef struct node&#123;	int val;	struct node* left, * right;&#125;TreeNode;  创建二叉树类12345678910111213141516171819202122232425262728293031323334353637383940414243444546474">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-11-27T14:36:10.000Z">
-<meta property="article:modified_time" content="2023-11-28T05:10:39.528Z">
+<meta property="article:published_time" content="2018-09-30T09:25:30.000Z">
+<meta property="article:modified_time" content="2023-11-19T16:26:31.768Z">
 <meta property="article:author" content="Rayii">
-<meta property="article:tag" content="二叉树">
 <meta name="twitter:card" content="summary">
 
 
@@ -145,7 +142,7 @@
     <li>
         <div class="all active" data-rel="All">All
             
-                <small>(9)</small>
+                <small>(10)</small>
             
         </div>
     </li>
@@ -206,7 +203,7 @@
         <div data-rel="数据结构">
             <i class="fold iconfont icon-right"></i>
             数据结构
-            <small>(7)</small>
+            <small>(8)</small>
         </div>
         
             <ul class="sub hide">
@@ -227,7 +224,7 @@
         <div data-rel="数据结构&lt;---&gt;图">
             
             图
-            <small>(3)</small>
+            <small>(4)</small>
         </div>
         
     </li>
@@ -283,7 +280,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="9">
+<input type="hidden" id="yelog_site_posts_number" value="10">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -362,6 +359,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>最短路径</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>最小生成树</a>
             </li>
         
@@ -379,6 +380,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/project/2023/11/30/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/"
+           data-tag="最短路径"
+           data-author="" >
+            <span class="post-title" title="最短路径">最短路径</span>
+            <span class="post-date" title="2023-11-30 19:13:30">2023/11/30</span>
+        </a>
         
         
         <a  class="All 数据结构 树 "
@@ -506,7 +516,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2023-11-25 18:36:39'>2023-11-24 22:30</time>
+            Created At : <time class="date" title='Updated At: 2023-12-01 02:10:27'>2023-11-24 22:30</time>
         
     </div>
     <div class="article-meta">
@@ -517,7 +527,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80"><span class="toc-text">逆向基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="toc-text">破解思路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%AA%8C%E8%AF%81%E5%BD%A2%E5%BC%8F"><span class="toc-text">其他验证形式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E9%AA%8C%E8%AF%81"><span class="toc-text">网络验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E9%AA%8C%E8%AF%81"><span class="toc-text">重启验证</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8-RegOpenKeyA"><span class="toc-text">注册表 : RegOpenKeyA</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#TXT-ReadFile"><span class="toc-text">TXT  : ReadFile</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#INI-GetPrivateProfileString"><span class="toc-text">INI : GetPrivateProfileString</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95"><span class="toc-text">破解方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2-%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2%E5%92%8C%E5%86%85%E5%AD%98%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2"><span class="toc-text">字符串搜索(文本搜索和内存字符串搜索)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0%E4%B8%8B%E6%96%AD%E7%82%B9"><span class="toc-text">在一些函数下断点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%A6%82MessageBoxA"><span class="toc-text">如MessageBoxA</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#skills"><span class="toc-text">skills</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x00401000%E5%A4%84%E4%BB%A3%E7%A0%81%E4%B8%BAXOR-eax-eax%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%98%AF%E7%94%B1%E6%98%93%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84"><span class="toc-text">0x00401000处代码为XOR eax, eax的程序是由易语言编写的</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OD%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">OD使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ctrl-F9-%E8%BF%90%E8%A1%8C%E5%88%B0%E5%BD%93%E5%89%8D%E5%87%BD%E6%95%B0%E7%BB%93%E5%B0%BE"><span class="toc-text">Ctrl + F9 运行到当前函数结尾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ALT-F9-%E7%9B%B4%E6%8E%A5%E4%BB%8E%E7%B3%BB%E7%BB%9F%E9%A2%86%E7%A9%BA%E8%BF%90%E8%A1%8C%E5%88%B0%E7%A8%8B%E5%BA%8F%E9%A2%86%E7%A9%BA"><span class="toc-text">ALT + F9 直接从系统领空运行到程序领空</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%8B"><span class="toc-text">例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%93%E8%AF%AD%E8%A8%80"><span class="toc-text">易语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%81%B0%E8%89%B2%E6%8C%89%E9%92%AE"><span class="toc-text">灰色按钮</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80"><span class="toc-text">逆向基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="toc-text">破解思路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%AA%8C%E8%AF%81%E5%BD%A2%E5%BC%8F"><span class="toc-text">其他验证形式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E9%AA%8C%E8%AF%81"><span class="toc-text">网络验证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E9%AA%8C%E8%AF%81"><span class="toc-text">重启验证</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%A1%A8-RegOpenKeyA"><span class="toc-text">注册表 : RegOpenKeyA</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#TXT-ReadFile"><span class="toc-text">TXT  : ReadFile</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#INI-GetPrivateProfileString"><span class="toc-text">INI : GetPrivateProfileString</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E6%96%B9%E6%B3%95"><span class="toc-text">破解方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2-%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2%E5%92%8C%E5%86%85%E5%AD%98%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%90%9C%E7%B4%A2"><span class="toc-text">字符串搜索(文本搜索和内存字符串搜索)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0%E4%B8%8B%E6%96%AD%E7%82%B9"><span class="toc-text">在一些函数下断点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%A6%82MessageBoxA"><span class="toc-text">如MessageBoxA</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#skills"><span class="toc-text">skills</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x00401000%E5%A4%84%E4%BB%A3%E7%A0%81%E4%B8%BAXOR-eax-eax%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%98%AF%E7%94%B1%E6%98%93%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84"><span class="toc-text">0x00401000处代码为XOR eax, eax的程序是由易语言编写的</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OD%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">OD使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ctrl-F9-%E8%BF%90%E8%A1%8C%E5%88%B0%E5%BD%93%E5%89%8D%E5%87%BD%E6%95%B0%E7%BB%93%E5%B0%BE"><span class="toc-text">Ctrl + F9 运行到当前函数结尾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ALT-F9-%E7%9B%B4%E6%8E%A5%E4%BB%8E%E7%B3%BB%E7%BB%9F%E9%A2%86%E7%A9%BA%E8%BF%90%E8%A1%8C%E5%88%B0%E7%A8%8B%E5%BA%8F%E9%A2%86%E7%A9%BA"><span class="toc-text">ALT + F9 直接从系统领空运行到程序领空</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%8B"><span class="toc-text">例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%93%E8%AF%AD%E8%A8%80"><span class="toc-text">易语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%81%B0%E8%89%B2%E6%8C%89%E9%92%AE"><span class="toc-text">灰色按钮</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CrackMe-001"><span class="toc-text">CrackMe 001</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%BB%E9%99%A4NAG"><span class="toc-text">去除NAG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E8%BE%93%E5%85%A5%E8%B4%A6%E5%8F%B7%E5%92%8C%E5%AF%86%E7%A0%81%E7%9A%84%E9%AA%8C%E8%AF%81"><span class="toc-text">破解输入账号和密码的验证</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E7%9A%84%E9%AA%8C%E8%AF%81"><span class="toc-text">破解输入密码的验证</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Delphi%E7%A8%8B%E5%BA%8F%E4%B8%93%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7DarkDe4"><span class="toc-text">Delphi程序专用的工具DarkDe4</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CrackMe-002"><span class="toc-text">CrackMe 002</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%9D%97%EF%BC%88%E6%90%9C%E7%B4%A2%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AD%97%E4%B8%B2FF25%EF%BC%89"><span class="toc-text">函数块（搜索二进制字串FF25）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B6%89%E5%8F%8A%E5%87%BD%E6%95%B0"><span class="toc-text">涉及函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rtcMsgBox"><span class="toc-text">rtcMsgBox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VbaStrCmp"><span class="toc-text">_VbaStrCmp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E9%92%AE%E4%BA%8B%E4%BB%B6%E7%9A%84%E9%A6%96%E5%9C%B0%E5%9D%80816C24"><span class="toc-text">按钮事件的首地址816C24</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VB-Decompiler%E5%B7%A5%E5%85%B7"><span class="toc-text">VB Decompiler工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -548,6 +558,27 @@
 <p>假定你现在破解一个外挂，通过这个方法找到三个不同的窗口ID，你也不知道哪个是功能窗口ID，那你就在我们通过“FF 25”找到的第一个窗口ID那里逐个进行替换尝试。</p>
 <h2 id="灰色按钮"><a href="#灰色按钮" class="headerlink" title="灰色按钮"></a>灰色按钮</h2><p>操作系统为按钮的状态显示有一个专门的函数可以调用，函数名字叫做EnableWindow，中文意思就是窗口或者里面的控件（按钮、菜单、输入框等）能否被允许响应鼠标和键盘的输入。</p>
 <p>这个函数有两个参数，上面一个数值就是按钮的状态，如果是1表示按钮可以被点击，如果是0表示按钮不可以被点击。</p>
+<h1 id="CrackMe-001"><a href="#CrackMe-001" class="headerlink" title="CrackMe 001"></a>CrackMe 001</h1><h2 id="去除NAG"><a href="#去除NAG" class="headerlink" title="去除NAG"></a>去除NAG</h2><p>搜索字符串或者<strong>ShowWindow(推荐)</strong></p>
+<h2 id="破解输入账号和密码的验证"><a href="#破解输入账号和密码的验证" class="headerlink" title="破解输入账号和密码的验证"></a>破解输入账号和密码的验证</h2><p>搜索字符串或者<strong>MessageBoxA</strong></p>
+<h2 id="破解输入密码的验证"><a href="#破解输入密码的验证" class="headerlink" title="破解输入密码的验证"></a>破解输入密码的验证</h2><p>搜索字符串或者<strong>MessageBoxA</strong></p>
+<h2 id="Delphi程序专用的工具DarkDe4"><a href="#Delphi程序专用的工具DarkDe4" class="headerlink" title="Delphi程序专用的工具DarkDe4"></a>Delphi程序专用的工具DarkDe4</h2><p>DD使用方法：把CM拖入DD后，会提示转储成功，点是，接着又会出现两次对话框都点否，然后点“过程”。</p>
+<p>你会看到每一个按钮的按钮事件，从而一步就到达关键代码处，比搜字符串和API函数更简单暴力。</p>
+<p><img src="/project/project/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/image-20231201014058435.png" alt="image-20231201014058435"></p>
+<h1 id="CrackMe-002"><a href="#CrackMe-002" class="headerlink" title="CrackMe 002"></a>CrackMe 002</h1><p>1、搜索字符串。</p>
+<p>2、弹窗</p>
+<p><strong>阶段总结：VB编写的软件可以在_VbaStrCmp函数下断点，因为这个函数往往在真假码比较时使用。</strong></p>
+<h2 id="函数块（搜索二进制字串FF25）"><a href="#函数块（搜索二进制字串FF25）" class="headerlink" title="函数块（搜索二进制字串FF25）"></a>函数块（搜索二进制字串FF25）</h2><p>还记得我们以前分析易语言时，可以用搜索二进制字串FF25找到易语言体，我们同样用这种方法在VB程序中试试看。见下图：</p>
+<p><img src="/project/project/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/image-20231201015840456.png" alt="image-20231201015840456"></p>
+<p>会看到一连串的JMP，这些JMP后面都是函数。是的，这些函数就是这个VB程序会调用到的API函数。</p>
+<h2 id="涉及函数"><a href="#涉及函数" class="headerlink" title="涉及函数"></a>涉及函数</h2><h3 id="rtcMsgBox"><a href="#rtcMsgBox" class="headerlink" title="rtcMsgBox"></a>rtcMsgBox</h3><p>这个是VB程序特有的调用弹窗的函数，替代了我们在其他语言编写的程序中经常用的MessageBoxA。</p>
+<h3 id="VbaStrCmp"><a href="#VbaStrCmp" class="headerlink" title="_VbaStrCmp"></a>_VbaStrCmp</h3><p>字符串比较函数_VbaStrCmp。</p>
+<p><strong>阶段总结：在VB程序中，要对rtcMsgBox函数下断点才能断下弹窗。</strong></p>
+<h3 id="按钮事件的首地址816C24"><a href="#按钮事件的首地址816C24" class="headerlink" title="按钮事件的首地址816C24"></a>按钮事件的首地址816C24</h3><p>分别在下面有一个JMP，这两个JMP后面的地址就是点击“OK”按钮和“cancel”按钮后的按钮事件的首地址。</p>
+<h2 id="VB-Decompiler工具"><a href="#VB-Decompiler工具" class="headerlink" title="VB Decompiler工具"></a>VB Decompiler工具</h2><p><strong>总结：以后遇到VB程序，如果是没有加壳的，直接用VB Decompiler工具找到按钮事件位置，即可快速破解。</strong></p>
+<p><img src="/project/project/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/image-20231201020432614.png" alt="image-20231201020432614"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><strong>1、VB程序与其他语言编写的程序在API函数名称不同，要用专门的API函数才可以下断。</strong></p>
+<p><strong>2、破解VB程序有专门的核武器，就是VB Decompiler。</strong></p>
+<p><strong>3、可以通过查询二进制字串816C24快速找到按钮事件的首地址。</strong></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
