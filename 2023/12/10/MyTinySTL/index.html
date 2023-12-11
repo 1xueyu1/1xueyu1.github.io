@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MyTinySTL学习 | Rayii&#39;s blog</title>
+  <meta name="keywords" content=" STL ">
+  <meta name="description" content="MyTinySTL学习 | Rayii&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://1xueyu1.github.io/about/index.html">
+<meta property="og:site_name" content="Rayii&#39;s blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-09-30T09:25:30.000Z">
+<meta property="article:modified_time" content="2023-11-19T16:26:31.768Z">
+<meta property="article:author" content="Rayii">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Rayii's blog" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Rayii</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+            <a title="github"
+               href="https://github.com/1xueyu1"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:3299391667@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=3299391667&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(13)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="工具">
+            <i class="fold iconfont icon-right"></i>
+            工具
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="工具&lt;---&gt;Markdown">
+            
+            Markdown
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="逆向">
+            
+            逆向
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="数据结构">
+            <i class="fold iconfont icon-right"></i>
+            数据结构
+            <small>(9)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;树">
+            
+            树
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;图">
+            
+            图
+            <small>(5)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="数据结构&lt;---&gt;skills">
+            
+            skills
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="MyTinySTL">
+            
+            MyTinySTL
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="13">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>并查集</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>递归</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树的遍历</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二分法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>记忆化搜索</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>逆向</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>拓扑排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>线段树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>最短路径</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>最小生成树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STL</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All MyTinySTL "
+           href="/2023/12/10/MyTinySTL/"
+           data-tag="STL"
+           data-author="" >
+            <span class="post-title" title="MyTinySTL学习">MyTinySTL学习</span>
+            <span class="post-date" title="2023-12-10 17:07:19">2023/12/10</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/2023/12/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="二叉搜索树">二叉搜索树</span>
+            <span class="post-date" title="2023-12-04 13:27:25">2023/12/04</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/12/03/%E8%AE%B0%E5%BF%86%E5%8C%96%E9%80%92%E5%BD%92/"
+           data-tag="递归,记忆化搜索"
+           data-author="" >
+            <span class="post-title" title="记忆化递归">记忆化递归</span>
+            <span class="post-date" title="2023-12-03 12:46:16">2023/12/03</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/30/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/"
+           data-tag="最短路径"
+           data-author="" >
+            <span class="post-title" title="最短路径">最短路径</span>
+            <span class="post-date" title="2023-11-30 19:13:30">2023/11/30</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BF%AD%E4%BB%A3%E5%99%A8/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树迭代器">二叉树迭代器</span>
+            <span class="post-date" title="2023-11-27 22:36:10">2023/11/27</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/27/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"
+           data-tag="最小生成树"
+           data-author="" >
+            <span class="post-title" title="最小生成树">最小生成树</span>
+            <span class="post-date" title="2023-11-27 10:22:26">2023/11/27</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/"
+           data-tag="线段树"
+           data-author="" >
+            <span class="post-title" title="线段树">线段树</span>
+            <span class="post-date" title="2023-11-26 10:37:35">2023/11/26</span>
+        </a>
+        
+        
+        <a  class="All 逆向 "
+           href="/2023/11/24/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80/"
+           data-tag="逆向"
+           data-author="" >
+            <span class="post-title" title="逆向基础">逆向基础</span>
+            <span class="post-date" title="2023-11-24 22:30:50">2023/11/24</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 skills "
+           href="/2023/11/23/%E4%BA%8C%E5%88%86%E6%B3%95/"
+           data-tag="二分法"
+           data-author="" >
+            <span class="post-title" title="二分法">二分法</span>
+            <span class="post-date" title="2023-11-23 21:04:24">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/21/%E5%B9%B6%E6%9F%A5%E9%9B%86/"
+           data-tag="并查集"
+           data-author="" >
+            <span class="post-title" title="并查集">并查集</span>
+            <span class="post-date" title="2023-11-21 23:04:53">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 图 "
+           href="/2023/11/21/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/"
+           data-tag="图,拓扑排序"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2023-11-21 00:11:36">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All 数据结构 树 "
+           href="/2023/11/20/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86/"
+           data-tag="二叉树的遍历,C"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历">二叉树的遍历</span>
+            <span class="post-date" title="2023-11-20 17:09:30">2023/11/20</span>
+        </a>
+        
+        
+        <a  class="All 工具 Markdown "
+           href="/2023/11/19/markdown-tutorial/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="markdown-tutorial">markdown-tutorial</span>
+            <span class="post-date" title="2023-11-19 00:51:12">2023/11/19</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-MyTinySTL" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">MyTinySTL学习</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="MyTinySTL">MyTinySTL</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">STL</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2023-12-11 12:57:13'>2023-12-10 17:07</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STL%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95"><span class="toc-text">STL学习记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#STL%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">STL的组成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8"><span class="toc-text">容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-text">迭代器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E7%B1%BB%E5%88%AB"><span class="toc-text">迭代器类别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E9%80%82%E9%85%8D%E5%99%A8"><span class="toc-text">容器适配器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AB%E4%B9%89"><span class="toc-text">含义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A7%8D%E7%B1%BB"><span class="toc-text">种类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E9%80%82%E9%85%8D%E5%99%A8"><span class="toc-text">迭代器适配器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">文件结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#allocator-h%EF%BC%88%E5%88%86%E9%85%8D%E5%99%A8%EF%BC%89"><span class="toc-text">allocator.h（分配器）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E3%80%81%E9%87%8A%E6%94%BE%E5%87%BD%E6%95%B0"><span class="toc-text">内存分配、释放函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#new-%E5%92%8C-operator-new"><span class="toc-text">new 和 operator new</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#new%E5%92%8Coperator-new%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">new和operator new之间的关系</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#operator-delete"><span class="toc-text">::operator delete</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0construct%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0destroy"><span class="toc-text">构造函数construct和析构函数destroy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#util-h"><span class="toc-text">util.h</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9E%E5%88%B0construct-h%E4%B8%AD"><span class="toc-text">回到construct.h中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#allocator-h%E6%A1%86%E6%9E%B6"><span class="toc-text">allocator.h框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89allocator%E7%B1%BB"><span class="toc-text">定义allocator类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E9%87%8D%E5%91%BD%E5%90%8D"><span class="toc-text">数据类型重命名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B1%BB%E4%B8%AD%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="toc-text">类中函数的声明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#allocator%E4%B8%AD%E5%A3%B0%E6%98%8E%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E7%B1%BB%E5%A4%96%E5%AE%9E%E7%8E%B0"><span class="toc-text">allocator中声明的函数的类外实现</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#iterator-h%EF%BC%88%E8%BF%AD%E4%BB%A3%E5%99%A8%EF%BC%89"><span class="toc-text">iterator.h（迭代器）</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>(持续更新……)</strong></p>
+<p><strong>前言</strong></p>
+<p>这是我的第一个项目，从完全小白的方式接触一个大型项目<a target="_blank" rel="noopener" href="https://github.com/Alinshans/MyTinySTL">Alinshans&#x2F;MyTinySTL: Achieve a tiny STL in C++11 (github.com)</a>，如果能给同样从0开始接触项目的新人一点帮助，我不胜荣幸。</p>
+<p>要实现一个MyTinySTL，我们首先要学习STL是什么、由什么组成的，然后从它的底层原理去实现它。</p>
+<p>我们先在脑海中构建一个大纲，具体细节可以用到时再查,</p>
+<p>所以算法部分就不介绍了</p>
+<h1 id="STL学习记录"><a href="#STL学习记录" class="headerlink" title="STL学习记录"></a>STL学习记录</h1><p><strong>参考网站</strong></p>
+<p><a target="_blank" rel="noopener" href="https://c.biancheng.net/view/6675.html">迭代器是什么，C++ STL迭代器（iterator）用法详解 (biancheng.net)</a></p>
+<h2 id="STL的组成"><a href="#STL的组成" class="headerlink" title="STL的组成"></a>STL的组成</h2><p>通常认为，STL是由容器、算法、迭代器、函数对象、适配器、内存分配器这 6 部分构成，其中后面 4 部分是为前 2 部分服务的，它们各自的含义如表 1 所示。</p>
+<table>
+<thead>
+<tr>
+<th>STL的组成</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容器</td>
+<td align="center">一些封装数据结构的模板类，例如 vector 向量容器、list 列表容器等。</td>
+</tr>
+<tr>
+<td>算法</td>
+<td align="center">STL 提供了非常多（大约 100 个）的数据结构算法，它们都被设计成一个个的模板函数，这些算法在 std 命名空间中定义，其中大部分算法都包含在头文件 <algorithm> 中，少部分位于头文件 <numeric> 中。</numeric></algorithm></td>
+</tr>
+<tr>
+<td>迭代器</td>
+<td align="center">在 C++ STL 中，对容器中数据的读和写，是通过迭代器完成的，扮演着容器和算法之间的胶合剂。</td>
+</tr>
+<tr>
+<td>函数对象</td>
+<td align="center">如果一个类将 () 运算符重载为成员函数，这个类就称为函数对象类，这个类的对象就是函数对象（又称仿函数）。</td>
+</tr>
+<tr>
+<td>适配器</td>
+<td align="center">可以使一个类的接口（模板的参数）适配成用户指定的形式，从而让原本不能在一起工作的两个类工作在一起。值得一提的是，容器、迭代器和函数都有适配器。</td>
+</tr>
+<tr>
+<td>内存分配器</td>
+<td align="center">为容器类模板提供自定义的内存申请和释放功能，由于往往只有高级用户才有改变内存分配策略的需求，因此内存分配器对于一般用户来说，并不常用。</td>
+</tr>
+</tbody></table>
+<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>简单的理解容器，它就是一些模板类的集合，但和普通模板类不同的是，容器中封装的是组织数据的方法（也就是数据结构）。STL 提供有 3 类标准容器，分别是<strong>序列容器、排序容器和哈希容器</strong>，其中后两类容器有时也统称为关联容器。</p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>简单来讲，迭代器和 C++ 的指针非常类似，它可以是需要的任意类型，通过迭代器可以指向容器中的某个元素，如果需要，还可以对该元素进行读&#x2F;写操作。</p>
+<h4 id="迭代器类别"><a href="#迭代器类别" class="headerlink" title="迭代器类别"></a>迭代器类别</h4><p>常用的迭代器按功能强弱分为输入迭代器、输出迭代器、前向迭代器、双向迭代器、随机访问迭代器 5 种。</p>
+<ol>
+<li><p>前向迭代器（forward iterator）<br>假设 p 是一个前向迭代器，则 p 支持 ++p，p++，*p 操作，还可以被复制或赋值，可以用 &#x3D;&#x3D; 和 !&#x3D; 运算符进行比较。此外，两个正向迭代器可以互相赋值。</p>
+</li>
+<li><p>双向迭代器（bidirectional iterator）<br>双向迭代器具有正向迭代器的全部功能，除此之外，假设 p 是一个双向迭代器，则还可以进行 –p 或者 p– 操作（即一次向后移动一个位置）。</p>
+</li>
+<li><p>随机访问迭代器（random access iterator）<br>随机访问迭代器具有双向迭代器的全部功能。除此之外，假设 p 是一个随机访问迭代器，i 是一个整型变量或常量，则 p 还支持以下操作：</p>
+</li>
+</ol>
+<ul>
+<li>p+&#x3D;i：使得 p 往后移动 i 个元素。</li>
+<li>p-&#x3D;i：使得 p 往前移动 i 个元素。</li>
+<li>p+i：返回 p 后面第 i 个元素的迭代器。</li>
+<li>p-i：返回 p 前面第 i 个元素的迭代器。</li>
+<li>p[i]：返回 p 后面第 i 个元素的引用。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>容器</th>
+<th>对应的迭代器类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>array</td>
+<td>随机访问迭代器</td>
+</tr>
+<tr>
+<td>vector</td>
+<td>随机访问迭代器</td>
+</tr>
+<tr>
+<td>deque</td>
+<td>随机访问迭代器</td>
+</tr>
+<tr>
+<td>list</td>
+<td>双向迭代器</td>
+</tr>
+<tr>
+<td>set &#x2F; multiset</td>
+<td>双向迭代器</td>
+</tr>
+<tr>
+<td>map &#x2F; multimap</td>
+<td>双向迭代器</td>
+</tr>
+<tr>
+<td>forward_list</td>
+<td>前向迭代器</td>
+</tr>
+<tr>
+<td>unordered_map &#x2F; unordered_multimap</td>
+<td>前向迭代器</td>
+</tr>
+<tr>
+<td>unordered_set &#x2F; unordered_multiset</td>
+<td>前向迭代器</td>
+</tr>
+<tr>
+<td>stack</td>
+<td>不支持迭代器</td>
+</tr>
+<tr>
+<td>queue</td>
+<td>不支持迭代器</td>
+</tr>
+</tbody></table>
+<p>大家应该或多或少都用过，下面时截取的一个例子，这里就不赘述了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator i;</span><br><span class="line">    <span class="comment">//用 != 比较两个迭代器</span></span><br><span class="line"><span class="keyword">for</span> (i = v.<span class="built_in">begin</span>(); i != v.<span class="built_in">end</span>(); ++i)</span><br><span class="line">    cout &lt;&lt; *i &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>因为我们是要自己动手实现一个STL，对MyTinySTL的源码进行解读学习，所以对<code>vector</code>,<code>stack</code>等容器不再介绍了，大家自行搜索即可。</p>
+<h3 id="容器适配器"><a href="#容器适配器" class="headerlink" title="容器适配器"></a>容器适配器</h3><h4 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h4><p>举一个例子，假设一个代码模块 A，它的构成如下所示：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">f1</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">f2</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">f3</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">f4</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>现在我们需要设计一个模板 B，但发现，其实只需要组合一下模块 A 中的 f1()、f2()、f3()，就可以实现模板 B 需要的功能。其中 f1() 单独使用即可，而 f2() 和 f3() 需要组合起来使用，如下所示：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">B</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    A * a;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">g1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        a-&gt;<span class="built_in">f1</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">g2</span><span class="params">()</span></span>&#123;</span><br><span class="line">        a-&gt;<span class="built_in">f2</span>();</span><br><span class="line">        a-&gt;<span class="built_in">f3</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>我们可以将模板 B 称为 B 适配器。</p>
+<p>容器适配器也是同样的道理，简单的理解容器适配器，其就是将不适用的序列式容器（包括 vector、deque 和 list）变得适用。容器适配器的底层实现和模板 A、B 的关系是完全相同的，即通过封装某个序列式容器，并重新组合该容器中包含的成员函数，使其满足某些特定场景的需要。</p>
+<blockquote>
+<p>容器适配器本质上还是容器，只不过此容器模板类的实现，利用了大量其它基础容器模板类中已经写好的成员函数。当然，如果必要的话，容器适配器中也可以自创新的成员函数。</p>
+</blockquote>
+<h4 id="种类"><a href="#种类" class="headerlink" title="种类"></a>种类</h4><p>STL 提供了 3 种容器适配器，分别为 stack 栈适配器、queue 队列适配器以及 priority_queue 优先权队列适配器。</p>
+<table>
+<thead>
+<tr>
+<th>容器适配器</th>
+<th align="left">基础容器筛选条件</th>
+<th>默认使用的基础容器</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>stack</td>
+<td align="left">基础容器需包含以下成员函数：empty()size()back()push_back()pop_back()满足条件的基础容器有 vector、deque、list。</td>
+<td>deque</td>
+</tr>
+<tr>
+<td>queue</td>
+<td align="left">基础容器需包含以下成员函数：empty()size()front()back()push_back()pop_front()满足条件的基础容器有 deque、list。</td>
+<td>deque</td>
+</tr>
+<tr>
+<td>priority_queue</td>
+<td align="left">基础容器需包含以下成员函数：empty()size()front()push_back()pop_back()满足条件的基础容器有vector、deque。</td>
+<td>vector</td>
+</tr>
+</tbody></table>
+<p>后面的就不详细说了，用到时再查即可。</p>
+<h3 id="迭代器适配器"><a href="#迭代器适配器" class="headerlink" title="迭代器适配器"></a>迭代器适配器</h3><p>同容器适配器，所谓迭代器适配器，其本质也是一个模板类，比较特殊的是，该模板类是借助以上 5 种基础迭代器（输入迭代器、输出迭代器、前向迭代器、双向迭代器以及随机访问迭代器）实现的。换句话说，迭代器适配器模板类的内部实现，是通过对以上 5 种基础迭代器拥有的成员方法进行整合、修改，甚至为了实现某些功能还会添加一些新的成员方法。由此，将基础迭代器“改头换面”，就变成了本节要讲的迭代器适配器。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>反向迭代器（reverse_iterator）</td>
+<td align="center">又称“逆向迭代器”，其内部重新定义了递增运算符（++）和递减运算符（–），专门用来实现对容器的逆序遍历。</td>
+</tr>
+<tr>
+<td>安插型迭代器（inserter或者insert_iterator）</td>
+<td align="center">通常用于在容器的任何位置添加新的元素，需要注意的是，此类迭代器不能被运用到元素个数固定的容器（比如 array）上。</td>
+</tr>
+<tr>
+<td>流迭代器（istream_iterator &#x2F; ostream_iterator） 流缓冲区迭代器（istreambuf_iterator &#x2F; ostreambuf_iterator）</td>
+<td align="center">输入流迭代器用于从文件或者键盘读取数据；相反，输出流迭代器用于将数据输出到文件或者屏幕上。 输入流缓冲区迭代器用于从输入缓冲区中逐个读取数据；输出流缓冲区迭代器用于将数据逐个写入输出流缓冲区。</td>
+</tr>
+<tr>
+<td>移动迭代器（move_iterator）</td>
+<td align="center">此类型迭代器是 C++ 11 标准中新添加的，可以将某个范围的类对象移动到目标范围，而不需要通过拷贝去移动。</td>
+</tr>
+</tbody></table>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 反向迭代器 </span></span><br><span class="line">std::reverse_iterator&lt;std::list&lt;<span class="type">int</span>&gt;::iterator&gt; begin = values.<span class="built_in">rbegin</span>();</span><br><span class="line">    std::reverse_iterator&lt;std::list&lt;<span class="type">int</span>&gt;::iterator&gt; end = values.<span class="built_in">rend</span>();</span><br><span class="line">    <span class="keyword">while</span> (begin != end) &#123;</span><br><span class="line">        cout &lt;&lt; *begin &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="comment">//注意，这里是 ++，因为反向迭代器内部互换了 ++ 和 -- 的含义</span></span><br><span class="line">        ++begin;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>六大组件</strong></p>
+<ol>
+<li>分配器（Allocators）：内存管理。</li>
+<li>迭代器（Iterators）：泛化的指针，算法通过迭代器访问容器中的数据。</li>
+<li>容器（Containers）：封装了大量常用的数据结构。</li>
+<li>算法（Algorithms）：定义了一些常用算法，处理数据。</li>
+<li>仿函数（Functors）：具有函数特质的对象（重载<code>operator()</code>的类）。</li>
+<li>适配器（Adapters）：修改接口。</li>
+</ol>
+<h1 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">MyTinySTL</span><br><span class="line">│      alloc.h       // 分配器</span><br><span class="line">│      allocator.h   </span><br><span class="line">│      construct.h</span><br><span class="line">│      uninitialized.h</span><br><span class="line">│      memory.h</span><br><span class="line">│      iterator.h    // 迭代器</span><br><span class="line">│      type<span class="emphasis">_traits.h // 萃取器</span></span><br><span class="line"><span class="emphasis">│      list.h        // 容器</span></span><br><span class="line"><span class="emphasis">│      vector.h</span></span><br><span class="line"><span class="emphasis">│      deque.h</span></span><br><span class="line"><span class="emphasis">│      rb_</span>tree.h</span><br><span class="line">│      set.h</span><br><span class="line">│      map.h</span><br><span class="line">│      hashtable.h</span><br><span class="line">│      unordered<span class="emphasis">_map.h</span></span><br><span class="line"><span class="emphasis">│      unordered_</span>set.h</span><br><span class="line">│      astring.h</span><br><span class="line">│      basic<span class="emphasis">_string.h</span></span><br><span class="line"><span class="emphasis">│      queue.h</span></span><br><span class="line"><span class="emphasis">│      stack.h</span></span><br><span class="line"><span class="emphasis">│      algo.h		 // 算法</span></span><br><span class="line"><span class="emphasis">│      algobase.h</span></span><br><span class="line"><span class="emphasis">│      algorithm.h</span></span><br><span class="line"><span class="emphasis">│      numeric.h</span></span><br><span class="line"><span class="emphasis">│      heap_</span>algo.h</span><br><span class="line">│      set<span class="emphasis">_algo.h</span></span><br><span class="line"><span class="emphasis">│      functional.h  //仿函数</span></span><br><span class="line"><span class="emphasis">│      exceptdef.h   //其他</span></span><br><span class="line"><span class="emphasis">│      util.h</span></span><br><span class="line"><span class="emphasis">│</span></span><br><span class="line"><span class="emphasis">└─Test       	     // 测试文件</span></span><br><span class="line"><span class="emphasis">    │  test.cpp      // 程序入口</span></span><br><span class="line"><span class="emphasis">    │  algorithm_</span>performance<span class="emphasis">_test.h</span></span><br><span class="line"><span class="emphasis">    │  algorithm_</span>test.h</span><br><span class="line"><span class="code">    │  deque_test.h</span></span><br><span class="line"><span class="code">    │  list_test.h</span></span><br><span class="line"><span class="code">    │  map_test.h</span></span><br><span class="line"><span class="code">    │  queue_test.h</span></span><br><span class="line"><span class="code">    │  set_test.h</span></span><br><span class="line"><span class="code">    │  stack_test.h</span></span><br><span class="line"><span class="code">    │  string_test.h</span></span><br><span class="line"><span class="code">    │  test.h</span></span><br><span class="line"><span class="code">    │  unordered_map_test.h</span></span><br><span class="line"><span class="code">    │  unordered_set_test.h</span></span><br><span class="line"><span class="code">    │  vector_test.h</span></span><br><span class="line"><span class="code">    │  CMakeLists.txt</span></span><br><span class="line"><span class="code">    │  README.md</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_60825404/article/details/133990588">《MyTinySTL》项目学习笔记–开始01-CSDN博客</a></p>
+<p><img src="/2023/12/10/MyTinySTL/image-20231210235633694.png" alt="image-20231210235633694"></p>
+<p>通过翻阅这些头文件，我们会发现，一些头文件中会调用其他的头文件，所以，一定会有一个开始的头文件没有调用任何文件，或是调用的少。于是，起点就找到了：</p>
+<p>虽然type_traits.h没有调用任何头文件，但因为它的作用一开始过于抽象，我们先不理会，先从分配器入手：</p>
+<p>分配器 包含 construct.h 和allocator.h（还有一个alloc.h这个属于内存管理–内存池的范畴，我们先不追究内存管理，先理清stl，感兴趣的可以提前试一试）</p>
+<p>因为迭代器充当了算法，容器间的桥梁，算法要向迭代器提问，来获取容器的信息，所以分配好内存后，我们先完善迭代器</p>
+<p>迭代器包含：iterator.h </p>
+<p>仿函数提供一些基础方法，供算法使用，所以迭代器完后，我们追踪仿函数；</p>
+<p>适配器主要是修改接口，所以有仿函数、容器、迭代器的适配器（三种），我们中途都能进行添加。</p>
+<p>因此，大体方向是：</p>
+<p>分配器 、 迭代器 、 仿函数、适配器 、 算法 、 容器。</p>
+<p>至于测试程序，依照原项目说明进行。</p>
+<h1 id="allocator-h（分配器）"><a href="#allocator-h（分配器）" class="headerlink" title="allocator.h（分配器）"></a><code>allocator.h</code>（分配器）</h1><p>这个头文件包含一个模板类 allocator，用于管理内存的分配、释放，对象的构造、析构</p>
+<p>根据代码在<code>mystl</code>中定义了一个<code>allocator</code>模板类。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 给T, T*, T&amp;等符号取名字</span></span><br><span class="line">  <span class="keyword">typedef</span> T            value_type;</span><br><span class="line">  <span class="keyword">typedef</span> T*           pointer;</span><br><span class="line">  <span class="keyword">typedef</span> <span class="type">const</span> T*     const_pointer;</span><br><span class="line">  <span class="keyword">typedef</span> T&amp;           reference;</span><br><span class="line">  <span class="keyword">typedef</span> <span class="type">const</span> T&amp;     const_reference;</span><br><span class="line">  <span class="keyword">typedef</span> <span class="type">size_t</span>       size_type;</span><br><span class="line">  <span class="keyword">typedef</span> <span class="type">ptrdiff_t</span>    difference_type;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 和对分配器内的内存的分配、释放，对象的构造、析构函数的声明</span></span><br></pre></td></tr></table></figure>
+
+<p>然后后面就是类内声明的函数的类外实现了</p>
+<h2 id="内存分配、释放函数"><a href="#内存分配、释放函数" class="headerlink" title="内存分配、释放函数"></a>内存分配、释放函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回一个指向这篇内存的T*的指针</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> <span class="title class_">T</span>&gt;</span><br><span class="line">T* allocator&lt;T&gt;::<span class="built_in">allocate</span>(size_type n)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span> (n == <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">  <span class="comment">// static_cast&lt;T*&gt;代表将返回值类型转换为T*</span></span><br><span class="line">  <span class="comment">// ::operator new()函数是new的一个重载，返回void*</span></span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">static_cast</span>&lt;T*&gt;(::<span class="keyword">operator</span> <span class="built_in">new</span>(n * <span class="built_in">sizeof</span>(T)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="new-和-operator-new"><a href="#new-和-operator-new" class="headerlink" title="new 和 operator new"></a><code>new</code> 和 <code>operator new</code></h3><ul>
+<li><p>new：指我们在C++里通常用到的运算符，比如A* a &#x3D; new A; 对于new来说，有new和::new之分，前者位于std</p>
+</li>
+<li><p>operator new()：指对new的重载形式，它是一个函数，并不是运算符。</p>
+</li>
+<li><p>对于operator new来说，分为全局重载和类重载，<strong>全局重载</strong>是<code>void* ::operator new(size_t size)</code>，在<strong>类中重载</strong>形式 <code>void* A::operator new(size_t size)</code>。事实上系统默认的全局::operator new(size_t size)也只是调用malloc分配内存，并且返回一个void*指针。而构造函数的调用(如果需要)是在new运算符中完成的；</p>
+</li>
+</ul>
+<hr>
+<h4 id="new和operator-new之间的关系"><a href="#new和operator-new之间的关系" class="headerlink" title="new和operator new之间的关系"></a>new和operator new之间的关系</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A* a = <span class="keyword">new</span> A;</span><br></pre></td></tr></table></figure>
+
+<p>分为两步：<br>1.分配内存，2.调用A()构造对象。<br>事实上，分配内存这一操作就是由operator new(size_t)来完成的，如果类A重载了operator new，那么将调用A::operator new(size_t )，如果没有重载，就调用::operator new(size_t )，全局new操作符由C++默认提供。<br>因此前面的两步也就是：1.调用operator new 2.调用构造函数。</p>
+<h3 id="operator-delete"><a href="#operator-delete" class="headerlink" title="::operator delete"></a><code>::operator delete</code></h3><p>首先new包含两阶段的操作。<br>（1）首先调用：：operator new分配内存 （2）调用Foo::Foo() 构造对象内容<br>然后是delete也分两部分的操作。<br>（1）首先调用Foo::~Foo()将对象析构 （2）调用::operator delete释放内存<br>那么可以对::operator new和::operator delete进行重载么，当然是肯定的<br>见代码：</p>
+<p>接下来是构造函数<code>construct</code>和析构函数<code>destroy</code>的实现，来到<code>construct.h</code>文件中。</p>
+<h2 id="构造函数construct和析构函数destroy"><a href="#构造函数construct和析构函数destroy" class="headerlink" title="构造函数construct和析构函数destroy"></a>构造函数<code>construct</code>和析构函数<code>destroy</code></h2><p>来到<code>construct.h</code>中，得知：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 这个头文件包含两个函数 construct，destroy</span><br><span class="line">// construct : 负责对象的构造</span><br><span class="line">// destroy   : 负责对象的析构</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> <span class="title class_">Ty</span>, <span class="keyword">class</span>... Args&gt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">construct</span><span class="params">(Ty* ptr, Args&amp;&amp;... args)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  ::<span class="keyword">new</span> ((<span class="type">void</span>*)ptr) <span class="built_in">Ty</span>(mystl::forward&lt;Args&gt;(args)...);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这段代码中看见forward函数，跟过去到<code>util.h</code>中</p>
+<p>&#x2F;&#x2F; 这个文件包含一些通用工具，包括 move, forward, swap 等函数，以及 pair 等 </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> <span class="title class_">T</span>&gt;</span><br><span class="line"><span class="comment">// 通过访问std::remove_reference&lt;T&gt;::type，就能得到T去除引用符号后的类型。</span></span><br><span class="line"><span class="keyword">typename</span> std::remove_reference&lt;T&gt;::<span class="function">type&amp;&amp; <span class="title">move</span><span class="params">(T&amp;&amp; arg)</span> <span class="keyword">noexcept</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// noexcept关键字，表示该函数不会异常</span></span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">static_cast</span>&lt;<span class="keyword">typename</span> std::remove_reference&lt;T&gt;::type&amp;&amp;&gt;(arg);</span><br><span class="line">    <span class="comment">// 返回arg的右值引用</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>forward</code>函数是将传入的参数类型转换为引用的形式。</p>
+<p>跟着<code>forward</code>函数来到了<code>util.h</code>文件中</p>
+<h2 id="util-h"><a href="#util-h" class="headerlink" title="util.h"></a><code>util.h</code></h2><p>在这个文件中的<code>mystl</code>中实现了：</p>
+<ul>
+<li><p><code>move</code>函数：传入引用类型的参数，返回去除引用的参数类型</p>
+</li>
+<li><p><code>forward</code>函数：返回传入参数的引用，有不同的重载版本</p>
+</li>
+<li><p><code>swap</code>函数和重载版本</p>
+</li>
+<li><p><code>pair</code>类：<br> - 拷贝构造函数及重载（判断了参数类型是否可以转换）<br> - 重载了<code>=</code>赋值运算符，<code>==</code>,<code>!=</code>,<code>&lt;</code>,<code>&gt;</code>,<code>&lt;=</code>,<code>&gt;=</code>比较运算符<br> - 重载了<code>mystl</code>的<code>swap</code>函数<br> - <code>make_pair</code>函数：全局函数，让两个数据成为一个<code>pair</code></p>
+</li>
+</ul>
+<h2 id="回到construct-h中"><a href="#回到construct-h中" class="headerlink" title="回到construct.h中"></a>回到<code>construct.h</code>中</h2><p>然后就能看懂了</p>
+<p>这里实现了以下函数：</p>
+<ul>
+<li><code>construct</code>函数及重载</li>
+<li><code>destroy</code>函数<ul>
+<li><code>destroy_one</code>析构一个对象</li>
+<li><code>destroy_cat</code>析构多个，用迭代器遍历</li>
+</ul>
+</li>
+</ul>
+<p>然后<code>construct.h</code>结束，我们回到<code>allocator.h</code>中</p>
+<h2 id="allocator-h框架"><a href="#allocator-h框架" class="headerlink" title="allocator.h框架"></a><code>allocator.h</code>框架</h2><h3 id="定义allocator类"><a href="#定义allocator类" class="headerlink" title="定义allocator类"></a>定义<code>allocator</code>类</h3><h4 id="数据类型重命名"><a href="#数据类型重命名" class="headerlink" title="数据类型重命名"></a>数据类型重命名</h4><p>便于理解</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> T            value_type;</span><br><span class="line"><span class="keyword">typedef</span> T*           pointer;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">const</span> T*     const_pointer;</span><br><span class="line"><span class="keyword">typedef</span> T&amp;           reference;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">const</span> T&amp;     const_reference;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">size_t</span>       size_type;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">ptrdiff_t</span>    difference_type;</span><br></pre></td></tr></table></figure>
+
+<h4 id="类中函数的声明"><a href="#类中函数的声明" class="headerlink" title="类中函数的声明"></a>类中函数的声明</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 内存分配函数</span></span><br><span class="line"><span class="function"><span class="type">static</span> T*   <span class="title">allocate</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="type">static</span> T*   <span class="title">allocate</span><span class="params">(size_type n)</span></span>;</span><br><span class="line"><span class="comment">// 内存释放函数</span></span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">deallocate</span><span class="params">(T* ptr)</span></span>;</span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">deallocate</span><span class="params">(T* ptr, size_type n)</span></span>;</span><br><span class="line"><span class="comment">// 构造函数，通过调用对象的构造函数实现</span></span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">construct</span><span class="params">(T* ptr)</span></span>;</span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">construct</span><span class="params">(T* ptr, <span class="type">const</span> T&amp; value)</span></span>;</span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">construct</span><span class="params">(T* ptr, T&amp;&amp; value)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">construct</span><span class="params">(T* ptr, Args&amp;&amp; ...args)</span></span>;</span><br><span class="line"><span class="comment">// 析构函数， 通过调用对象的析构函数实现</span></span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">destroy</span><span class="params">(T* ptr)</span></span>;</span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">destroy</span><span class="params">(T* first, T* last)</span></span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="allocator中声明的函数的类外实现"><a href="#allocator中声明的函数的类外实现" class="headerlink" title="allocator中声明的函数的类外实现"></a><code>allocator</code>中声明的函数的类外实现</h3><p>大部分函数都是通过调用<code>construct.h</code>中的函数实现的</p>
+<p>先通过类型转换，再调用对象自身的构造函数和析构函数完成。</p>
+<p>至此，<code>allocator.h</code>结束，<strong>分配器</strong>完成。接下来是<strong>迭代器</strong></p>
+<h1 id="iterator-h（迭代器）"><a href="#iterator-h（迭代器）" class="headerlink" title="iterator.h（迭代器）"></a><code>iterator.h</code>（迭代器）</h1>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2023 author
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    #post {
+        background: url(/img/index_bg_img.jpg);
+    }
+    
+    
+    #post .index {
+        background: url(/img/other_bg_img.jpg);
+    }
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/article-list-background.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1305364667&auto=1&height=66"></iframe>
+</div>
+
+
+
+<!--以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码-->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset().left;
+var div_y = e.pageY - $moveTarget.offset().top;
+$DOC.on('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth() >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth() : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight() >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight() : targetY;
+$moveTarget.css({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on('mouseup', function () {
+$DOC.unbind("selectstart");
+$DOC.off('mousemove')
+$DOC.off('mouseup')
+$moveTarget.css('border', 'none')
+$('#musicDragArea').css('height', '10px');
+})
+})
+</script>
+</html>
