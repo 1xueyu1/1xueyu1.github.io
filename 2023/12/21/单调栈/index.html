@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Rayii&#39;s blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Rayii&#39;s blog">
+  <title>单调栈 | Rayii&#39;s blog</title>
+  <meta name="keywords" content=" 单调栈 ">
+  <meta name="description" content="单调栈 | Rayii&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -55,7 +55,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -566,12 +566,49 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-单调栈" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Rayii%E2%80%99s-blog"><span class="toc-text">Rayii’s blog</span></a></li></ol>
+        <h1 class="article-title">单调栈</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="数据结构">数据结构</a> > 
+            
+            <a  data-rel="数据结构&lt;---&gt;skill">skill</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">单调栈</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2023-12-21 18:24:18'>2023-12-21 18:19</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E8%B0%83%E6%A0%88"><span class="toc-text">单调栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%BC%80%E5%92%8C-%E5%8D%95%E8%B0%83%E6%A0%88"><span class="toc-text">前后缀和+单调栈</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -584,14 +621,37 @@
     }
 </style>
 </div>
-            <h1 id="Rayii’s-blog"><a href="#Rayii’s-blog" class="headerlink" title="Rayii’s blog"></a>Rayii’s blog</h1>
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h2><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/trapping-rain-water/description/">42. 接雨水 - 力扣（LeetCode）</a></p>
+<p>单调栈一般用于存放数组的<strong>下标</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">trap</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; height)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 单调栈，用于存放下标</span></span><br><span class="line">        stack&lt;<span class="type">int</span>&gt; st;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; height.<span class="built_in">size</span>(); i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(!st.<span class="built_in">empty</span>() &amp;&amp; height[i] &gt;= height[st.<span class="built_in">top</span>()])</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">// 求中间的高度</span></span><br><span class="line">                <span class="type">int</span> bottom_h = height[st.<span class="built_in">top</span>()];</span><br><span class="line">                st.<span class="built_in">pop</span>();</span><br><span class="line">                <span class="comment">// 如果到边缘结束</span></span><br><span class="line">                <span class="keyword">if</span>(st.<span class="built_in">empty</span>())<span class="keyword">break</span>;</span><br><span class="line">                <span class="comment">// 待求面积的高，两边高度较小的减去中间的</span></span><br><span class="line">                <span class="type">int</span> dh = <span class="built_in">min</span>(height[i], height[st.<span class="built_in">top</span>()]) - bottom_h;</span><br><span class="line">                <span class="comment">// 乘上宽度即是面积</span></span><br><span class="line">                ans += dh * (i - st.<span class="built_in">top</span>() - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            st.<span class="built_in">push</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="前后缀和-单调栈"><a href="#前后缀和-单调栈" class="headerlink" title="前后缀和+单调栈"></a>前后缀和+单调栈</h2><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/beautiful-towers-ii/description/?envType=daily-question&envId=2023-12-21">2866. 美丽塔 II - 力扣（LeetCode）</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">maximumSumOfHeights</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; maxHeights)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = maxHeights.<span class="built_in">size</span>();</span><br><span class="line">        stack&lt;<span class="type">int</span>&gt; st;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 后缀和</span></span><br><span class="line">        <span class="function">vector&lt;<span class="type">long</span> <span class="type">long</span>&gt; <span class="title">suf</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 哨兵</span></span><br><span class="line">        st.<span class="built_in">push</span>(n);</span><br><span class="line">        <span class="comment">// 求后缀和</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="type">int</span> x = maxHeights[i];</span><br><span class="line">            <span class="comment">// x &lt;= maxHeights[st.top()] 等于代表相邻相同的数值存一次</span></span><br><span class="line">            <span class="keyword">while</span> (st.<span class="built_in">size</span>() &gt; <span class="number">1</span> &amp;&amp; x &lt;= maxHeights[st.<span class="built_in">top</span>()]) &#123;</span><br><span class="line">                <span class="type">int</span> j = st.<span class="built_in">top</span>();</span><br><span class="line">                st.<span class="built_in">pop</span>();</span><br><span class="line">                sum -= (<span class="type">long</span> <span class="type">long</span>)maxHeights[j] * (st.<span class="built_in">top</span>() - j);</span><br><span class="line">            &#125;</span><br><span class="line">            sum += (<span class="type">long</span> <span class="type">long</span>)maxHeights[i] * (st.<span class="built_in">top</span>() - i);</span><br><span class="line">            suf[i] = sum;</span><br><span class="line">            st.<span class="built_in">push</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        st = <span class="built_in">stack</span>&lt;<span class="type">int</span>&gt;();</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans = sum;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> pre = <span class="number">0</span>;</span><br><span class="line">        st.<span class="built_in">push</span>(<span class="number">-1</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="type">int</span> x = maxHeights[i];</span><br><span class="line">            <span class="keyword">while</span> (st.<span class="built_in">size</span>() &gt; <span class="number">1</span> &amp;&amp; x &lt;= maxHeights[st.<span class="built_in">top</span>()]) &#123;</span><br><span class="line">                <span class="type">int</span> j = st.<span class="built_in">top</span>();</span><br><span class="line">                st.<span class="built_in">pop</span>();</span><br><span class="line">                pre -= (<span class="type">long</span> <span class="type">long</span>)maxHeights[j] * (j - st.<span class="built_in">top</span>());</span><br><span class="line">            &#125;</span><br><span class="line">            pre += (<span class="type">long</span> <span class="type">long</span>)maxHeights[i] * (i - st.<span class="built_in">top</span>());</span><br><span class="line">            ans = <span class="built_in">max</span>(ans, pre + suf[i + <span class="number">1</span>]);</span><br><span class="line">            st.<span class="built_in">push</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -600,11 +660,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 <div class="hide_box" onclick="dashangToggle()"></div>
