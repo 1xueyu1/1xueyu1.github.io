@@ -152,7 +152,7 @@
     <li>
         <div class="all active" data-rel="All">All
             
-                <small>(19)</small>
+                <small>(22)</small>
             
         </div>
     </li>
@@ -162,25 +162,10 @@
                 
     <li>
         <div data-rel="工具">
-            <i class="fold iconfont icon-right"></i>
-            工具
-            <small>(1)</small>
-        </div>
-        
-            <ul class="sub hide">
-                
-                    
-    <li>
-        <div data-rel="工具&lt;---&gt;Markdown">
             
-            Markdown
-            <small>(1)</small>
+            工具
+            <small>(2)</small>
         </div>
-        
-    </li>
-
-                
-            </ul>
         
     </li>
 
@@ -272,6 +257,17 @@
     
         
             
+                
+    <li>
+        <div data-rel="MIT6.031">
+            
+            MIT6.031
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
         
     
         
@@ -296,7 +292,7 @@
         <div data-rel="python">
             <i class="fold iconfont icon-right"></i>
             python
-            <small>(3)</small>
+            <small>(4)</small>
         </div>
         
             <ul class="sub hide">
@@ -306,7 +302,7 @@
         <div data-rel="python&lt;---&gt;爬虫">
             
             爬虫
-            <small>(1)</small>
+            <small>(3)</small>
         </div>
         
     </li>
@@ -354,7 +350,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="19">
+<input type="hidden" id="yelog_site_posts_number" value="22">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -469,6 +465,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>Markdown</a>
             </li>
         
@@ -480,7 +480,34 @@
     <nav id="title-list-nav">
         
         
-        <a  class="All python "
+        <a  class="All 工具 "
+           href="/2024/02/16/Git-learning/"
+           data-tag="Git"
+           data-author="" >
+            <span class="post-title" title="Git-tutorial">Git-tutorial</span>
+            <span class="post-date" title="2024-02-16 16:39:01">2024/02/16</span>
+        </a>
+        
+        
+        <a  class="All MIT6.031 "
+           href="/2024/02/14/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="MIT6.031">MIT6.031</span>
+            <span class="post-date" title="2024-02-14 20:00:33">2024/02/14</span>
+        </a>
+        
+        
+        <a  class="All python 爬虫 "
+           href="/2024/02/07/%E5%A4%9A%E8%BF%9B%E7%A8%8B/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="多进程">多进程</span>
+            <span class="post-date" title="2024-02-07 21:24:29">2024/02/07</span>
+        </a>
+        
+        
+        <a  class="All python 爬虫 "
            href="/2024/02/07/bs4%E8%A7%A3%E6%9E%90/"
            data-tag=""
            data-author="" >
@@ -642,7 +669,7 @@
         </a>
         
         
-        <a  class="All 工具 Markdown "
+        <a  class="All 工具 "
            href="/2023/11/19/markdown-tutorial/"
            data-tag="Markdown"
            data-author="" >
@@ -680,7 +707,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="python">python</a>
+            <a  data-rel="python">python</a> > 
+            
+            <a  data-rel="python&lt;---&gt;爬虫">爬虫</a>
             
         </span>
         
@@ -688,7 +717,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-02-07 20:34:25'>2024-02-07 20:34</time>
+            Created At : <time class="date" title='Updated At: 2024-02-07 22:52:20'>2024-02-07 20:34</time>
         
     </div>
     <div class="article-meta">
@@ -699,7 +728,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#BeautifulSoup%E5%AD%A6%E4%B9%A0"><span class="toc-text">BeautifulSoup学习</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -715,7 +744,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="BeautifulSoup学习"><a href="#BeautifulSoup学习" class="headerlink" title="BeautifulSoup学习"></a>BeautifulSoup学习</h2><ol>
+<li><p>安装：</p>
+<blockquote>
+<p>pip install bs4</p>
+<p>pip install lxml</p>
+</blockquote>
+</li>
+<li><p>使用</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">from bs4 import BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="section"># 对象实例化</span></span><br><span class="line"><span class="code">	# 1.加载本地html文件</span></span><br><span class="line"><span class="code">    fp = open(&quot;./xxx.html&quot;, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;)</span></span><br><span class="line"><span class="code">    soup = BeautifulSoup(fp, &#x27;lxml&#x27;)</span></span><br><span class="line"><span class="code">    # 2.将获取到的页面加载到对象</span></span><br><span class="line"><span class="code">    page_text = response.text</span></span><br><span class="line"><span class="code">    soup = BeautifulSoup(page_text, &#x27;lxml&#x27;)</span></span><br><span class="line"><span class="code"># 用于数据解析的方法和属性</span></span><br><span class="line"><span class="code">	- soup.tagName: 返回文档中第一次出现的tagName标签</span></span><br><span class="line"><span class="code">	- soup.find():</span></span><br><span class="line"><span class="code">		- find(&#x27;tagName&#x27;): 等同于soup.tagName</span></span><br><span class="line"><span class="code">		- 属性定位: soup.find(&#x27;div&#x27;, class_/id/attr = &quot;value&quot;)</span></span><br><span class="line"><span class="code">	- soup.find_all(&quot;tagName&quot;):返回所有标签(列表)</span></span><br><span class="line"><span class="code">	- select:</span></span><br><span class="line"><span class="code">		- soup.select(&quot;某种选择器(id, class, 标签...选择器)&quot;)： 返回一个列表</span></span><br><span class="line"><span class="code">		- 层级选择：</span></span><br><span class="line"><span class="code">			soup.select(&quot;.tang &gt; ul &gt; li &gt; a&quot;): &gt; 表示一个层级</span></span><br><span class="line"><span class="code">			soup.select(&quot;.tang &gt; ul a&quot;): 空格表示多个层级</span></span><br><span class="line"><span class="code">	 - 获取标签之间的文本数据:</span></span><br><span class="line"><span class="code">	 	 - soup.a.text/string/get_text()</span></span><br><span class="line"><span class="code">	 	 - text/get_text(): 可以获取某一个标签中的所有的文本内容</span></span><br><span class="line"><span class="code">	 	 - string：只能获取标签下直系的内容</span></span><br><span class="line"><span class="code">	 - 获取标签中的属性值:</span></span><br><span class="line"><span class="code">	 	 - soup.a[&#x27;href&#x27;]</span></span><br><span class="line"><span class="code">	</span></span><br><span class="line"><span class="code">    </span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3299391667@qq.com </span>
     </div>
